@@ -1,8 +1,7 @@
-package CTCI.ArraysAndStrings;
+package Array;
 
 /**
  * Given two strings, write a method to decide if one is a permutatio of the other.
- *
  */
 public class CheckPermutation {
 
