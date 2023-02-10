@@ -1,2 +1,5 @@
-package BinarySearch;public class FirstAndLastPosition {
+package BinarySearch;
+
+public class FirstAndLastPosition {
+
 }
