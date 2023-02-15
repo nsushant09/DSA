@@ -8,8 +8,8 @@ public class RowColMatrix {
         int target = 37;
         System.out.println(Arrays.toString(search(arr, target)));
 
-        int[][] sortedMatrix = {{1, 2, 3, 4, 5}, {6, 7, 8}, {9, 10, 11, 12}, {13}, {14, 15}};
-        System.out.println(Arrays.toString(searchInSortedMatrix(sortedMatrix, 19)));
+        int[][] sortedMatrix = {{1, 2, 3, 4, 5}, {6, 7, 8}, {9, 10, 11, 12}, {12,13}, {14, 15}};
+        System.out.println(Arrays.toString(searchInSortedMatrix(sortedMatrix, 12)));
     }
 
     static int[] search(int[][] matrix, int target) {
@@ -47,7 +47,7 @@ public class RowColMatrix {
                     return new int[]{mid, result};
                 }
                 return new int[]{-1, -1};
-            } else if (target < matrix[mid - 1][matrix[mid - 1].length - 1]) {
+            } else if (target < matrix[mid][0]) {
                 end = mid - 1;
             } else {
                 start = mid + 1;
