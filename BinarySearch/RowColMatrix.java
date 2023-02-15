@@ -46,6 +46,7 @@ public class RowColMatrix {
                 if (result != -1) {
                     return new int[]{mid, result};
                 }
+                return new int[]{-1, -1};
             } else if (target < matrix[mid - 1][matrix[mid - 1].length - 1]) {
                 end = mid - 1;
             } else {
