@@ -1,7 +1,8 @@
-package BubbleSort;
+package Sorting;
 
 import java.util.Arrays;
 
+//Uses bubble sort
 public class SortPeople {
     public static void main(String[] args) {
         int[] heights = {155, 185, 150};
